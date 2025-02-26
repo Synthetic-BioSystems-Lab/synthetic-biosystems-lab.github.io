@@ -9,6 +9,7 @@
     <script defer src="script.js"></script>
 </head>
 <body class="bg-gray-900 text-green-300">
+    <!-- Navigation Bar -->
     <nav class="bg-green-300 text-gray-900 p-4 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="text-3xl font-extrabold tracking-wide">Synthetic Biosystems Lab</h1>
@@ -22,25 +23,63 @@
         </div>
     </nav>
 
-    <header class="relative bg-green-200 text-center p-16 text-gray-900">
-        <h2 class="text-4xl font-bold">Exploring the Future of Synthetic Biology</h2>
-        <p class="text-lg mt-4">Innovative research in bioengineering and computational biology.</p>
+    <!-- Hero Section -->
+    <header class="relative bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('hero-image.jpg');">
+        <div class="text-center bg-black bg-opacity-50 p-8 rounded-lg">
+            <h2 class="text-5xl font-bold">Exploring the Future of Synthetic Biology</h2>
+            <p class="text-xl mt-4">Innovative research in bioengineering and computational biology.</p>
+        </div>
     </header>
 
+    <!-- About Section -->
     <section id="about" class="p-12 max-w-4xl mx-auto text-center">
         <h2 class="text-3xl font-bold">About Us</h2>
         <p class="mt-4 text-lg">Welcome to the Synthetic Biosystems Lab. We focus on cutting-edge synthetic biology research, blending computational modeling with wet lab experiments to drive innovation.</p>
     </section>
 
+    <!-- Publications Section -->
     <section id="publications" class="p-12 bg-green-800 max-w-6xl mx-auto rounded-lg shadow-md">
         <h2 class="text-3xl font-bold">Publications</h2>
         <ul id="orcid-publications" class="mt-4 text-lg text-left pl-6">Loading publications...</ul>
     </section>
 
+    <!-- Research Projects Section -->
     <section id="research" class="p-12 max-w-6xl mx-auto">
         <h2 class="text-3xl font-bold text-center">Research Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <img src="project1.jpg" alt="Project 1" class="w-full rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mt-4">Project 1</h3>
+                <p class="mt-2">Description of the first research project, its objectives, and outcomes.</p>
+            </div>
+            <div class="bg-green-800 p-6 rounded-lg shadow-md hover:shadow-lg transition">
+                <img src="project2.jpg" alt="Project 2" class="w-full rounded-lg shadow-md">
+                <h3 class="text-2xl font-bold mt-4">Project 2</h3>
+                <p class="mt-2">Description of the second research project, highlighting key findings and impact.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Team Section -->
+    <section id="team" class="p-12 max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl font-bold">Our Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <img src="team1.jpg" alt="Team Member 1" class="w-32 h-32 mx-auto rounded-full">
+                <h3 class="text-xl font-bold mt-4">Dr. Researcher One</h3>
+                <p>Principal Investigator</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="p-12 bg-green-800 max-w-4xl mx-auto text-center rounded-lg shadow-md">
+        <h2 class="text-3xl font-bold">Contact</h2>
+        <p class="mt-4 text-lg">Email: contact@syntheticbiosystems.com</p>
+        <p class="mt-2"><a href="https://github.com/synthetic-biosystems-lab" class="hover:underline">GitHub</a> | <a href="#" class="hover:underline">Twitter</a> | <a href="#" class="hover:underline">LinkedIn</a></p>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-green-300 text-gray-900 text-center p-6 mt-8 shadow-md">
         <div class="container mx-auto">
             <p>&copy; 2025 Synthetic Biosystems Lab. All rights reserved.</p>
